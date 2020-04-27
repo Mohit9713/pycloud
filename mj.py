@@ -1,13 +1,14 @@
-#python3
+#! /usr/bin/python3
 import os
+import json
 
 import subprocess
 
 a=subprocess.Popen(["stat","."], stdout=subprocess.PIPE)
 o,err=a.communicate()
-print (o)
+#print (o)
 
-print ("Test end")
+#print ("Test end")
 
 mydict={"tried":"Hey"}
-print (mydict)
+print (json.dumps(mydict))
